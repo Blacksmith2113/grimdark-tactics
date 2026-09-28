@@ -53,13 +53,14 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 30
 
-[node name="ButtonPlay" type="Button" parent="VBoxContainer" unique_id=2069493008]
+[node name="ButtonPlay" type="Button" parent="VBoxContainer" unique_id=2056526231]
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_y2rfe")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_y2rfe")
-theme_override_styles/hover = SubResource("StyleBoxFlat_y2rfe")
+theme_override_styles/hover = SubResource("StyleBoxFlat_0bfng")
 text = "Play"
 
 [node name="ButtonOptions" type="Button" parent="VBoxContainer" unique_id=676112412]

@@ -8,7 +8,9 @@ public partial class MainMenu : Control
 	public override void _Ready()
 	{
 		var exit = GetNode<Button>("VBoxContainer/ButtonExit");
+		var play = GetNode<Button>("VBoxContainer/ButtonPlay");
 		exit.Pressed += onExitPressed;
+		play.Pressed += onPlayPressed;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -19,5 +21,9 @@ public partial class MainMenu : Control
 	public void onExitPressed()
 	{
 		GetTree().Quit();
+	}
+	public void onPlayPressed()
+	{
+		GetTree().ChangeSceneToFile("res://scenes/game.tscn");
 	}
 }
