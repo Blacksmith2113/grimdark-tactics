@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bmin8hr1qcejn"]
+
+[ext_resource type="Script" uid="uid://c1ebuo7gx3qke" path="res://scripts/PauseMenu.cs" id="1_jvnd5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g4jo0"]
+bg_color = Color(0.18717611, 0.18717617, 0.18717602, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_komsw"]
+bg_color = Color(0.65423244, 0.6542319, 0.6542322, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="PauseMenu" type="Control" unique_id=706009456]
+process_mode = 2
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = -576.0
+offset_bottom = -324.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jvnd5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=269826822]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.47058824)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect" unique_id=113681850]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonResume" type="Button" parent="ColorRect/VBoxContainer" unique_id=1102544827]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_g4jo0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g4jo0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_komsw")
+text = "Resume"
+
+[node name="ButtonMainMenu" type="Button" parent="ColorRect/VBoxContainer" unique_id=1698214262]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_g4jo0")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_g4jo0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_komsw")
+text = "Exit to main menu"
